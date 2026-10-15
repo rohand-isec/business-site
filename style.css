@@ -1,0 +1,30 @@
+*{box-sizing:border-box}
+:root{--ink:#17342d;--muted:#4f5d58;--bg:#f7f8f4;--panel:#ffffff;--line:#e2e8df;--dark:#173b31;--accent:#d1f1a5;--link:#3f6a2e}
+body{margin:0;font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--link)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:9}
+header.site{background:var(--panel);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;gap:10px;align-items:center;color:var(--ink);text-decoration:none}
+.brand small{display:block;color:var(--muted);font-size:13px}
+nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-size:15px}
+nav a[aria-current]{color:var(--link);font-weight:600}
+.intro{background:#edf2e8;border-bottom:1px solid var(--line)}.intro .wrap{padding-top:48px;padding-bottom:40px}
+.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:700;color:#4d7839;margin:0 0 8px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 12px}
+.lead{font-size:18px;color:var(--muted);max-width:640px;margin:0}
+.content{padding-top:24px;padding-bottom:48px;max-width:760px}
+section{border-bottom:1px solid var(--line);padding:20px 0}section:last-child{border-bottom:0}
+h2{font-size:20px;margin:0 0 8px}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:8px 0 16px}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px;color:var(--ink);text-decoration:none}
+.card:hover{border-color:#b9c9b0}
+.button{display:inline-block;background:var(--dark);color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:600}
+a:focus-visible,.button:focus-visible{outline:3px solid #4d7839;outline-offset:2px}
+footer.site{background:#102b25;color:#e7efe9;margin-top:40px}
+footer.site a{color:#e7efe9;display:block}
+.cols{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));padding-top:32px;padding-bottom:24px}
+footer .eyebrow{color:var(--accent)}
+.legal{border-top:1px solid #2a4a40;padding-top:14px;padding-bottom:20px;font-size:13px}
+.legal a{display:inline;margin-left:12px}
